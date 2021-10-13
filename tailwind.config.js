@@ -3,7 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   mode: 'jit',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: 'Roboto, sans-serif',
+        segoe: 'Segoe UI, sans-serif',
+      },
+    },
   },
   variants: {
     extend: {},
