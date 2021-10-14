@@ -100,23 +100,22 @@ export default {
 </script>
 
 <template>
-  <h2
+  <div
     class="
-      md:py-6
+      relative
+      text-4xl
+      md:text-8xl
+      md:py-4
       flex flex-row
       justify-center
       md:justify-start
       items-center
-      text-4xl
       tracking-wide
-      md:text-8xl
       uppercase
       text-white
-      hover:text-black
       font-black font-roboto
-      transition-all
+      transition-opacity
       duration-500
-      relative
     "
     :style="{
       '-webkit-text-fill-color': isActive ? 'black' : 'white',
@@ -125,7 +124,7 @@ export default {
     @pointerenter="mouseEnterHandler"
     @pointerleave="mouseLeaveHandler"
   >
-    <span ref="icon" class="absolute -left-6 h-20 z-10">
+    <span ref="icon" class="absolute -left-6 h-20 opacity-0 z-10">
       <IconTutorat class="w-full h-full" />
     </span>
     <span
@@ -140,11 +139,11 @@ export default {
     >
       {{ cutName.otherLetter }}
     </span>
-  </h2>
+  </div>
 </template>
 
 <style scoped>
-h2 {
+div {
   -webkit-text-stroke: 1px black;
 }
 </style>

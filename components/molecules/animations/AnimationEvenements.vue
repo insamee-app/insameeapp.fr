@@ -1,5 +1,5 @@
 <script>
-import { ref, onMounted, watch } from '@nuxtjs/composition-api'
+import { ref, onMounted, watch, computed } from '@nuxtjs/composition-api'
 import { useMotion } from '@vueuse/motion'
 
 export default {
@@ -34,7 +34,7 @@ export default {
         opacity: 0,
         x: 150,
         transition: {
-          duration: 100,
+          duration: 150,
           ease: 'easeIn',
         },
       },
@@ -59,11 +59,17 @@ export default {
             graphicMotion.variant.value = 'initial'
             blobMotion.variant.value = 'initial'
           }
-        }
+        },
+        { immediate: true }
       )
     })
 
+    const isActive = computed(() => {
+      return props.state === 'active'
+    })
+
     return {
+      isActive,
       blob,
       graphic,
     }
@@ -84,10 +90,12 @@ export default {
         z-0
       "
     >
-      <BlobEvenement ref="blob" />
+      <BlobEvenement ref="blob" class="opacity-0" />
     </div>
-    <div class="absolute right-0 top-0 transform translate-y-1/2 translate-x-6">
-      <GraphicEvenement ref="graphic" />
+    <div
+      class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-6"
+    >
+      <GraphicEvenement ref="graphic" class="opacity-0" />
     </div>
   </AnimationSpace>
 </template>

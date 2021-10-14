@@ -1,52 +1,6 @@
-<template>
-  <div
-    class="
-      relative
-      min-h-[calc(100vh-64px)]
-      px-4
-      pb-4
-      pt-12
-      md:p-16
-      flex flex-col
-      justify-between
-      items-stretch
-      antialiased
-    "
-  >
-    <TitleTeam :state="teamState" @active="setActiveProject" />
-
-    <section class="flex flex-col items-stretch space-y-6 md:space-y-0">
-      <TitleService
-        v-for="(service, index) in services"
-        :key="service.name"
-        :state="service.state"
-        :name="service.name"
-        :index="index"
-        @active="setActiveProject"
-      />
-    </section>
-
-    <footer>
-      <address
-        class="
-          flex flex-col
-          items-end
-          not-italic
-          text-base
-          font-segoe font-semibold
-        "
-      >
-        <span class="text-gray-500">Nous contacter</span>
-        <a class="text-gray-700" href="mailto:contact@insamee.fr">
-          contact@insamee.fr
-        </a>
-      </address>
-    </footer>
-  </div>
-</template>
-
 <script>
 import { ref } from '@nuxtjs/composition-api'
+import { useMotion } from '@vueuse/motion'
 
 export default {
   setup() {
@@ -88,11 +42,63 @@ export default {
       })
     }
 
+    const nav = ref()
+    useMotion(nav, {
+      initial: {
+        opacity: 0,
+      },
+      enter: {
+        opacity: 1,
+        transition: {
+          duration: 150,
+        },
+      },
+    })
+
     return {
       setActiveProject,
       services,
       teamState,
+      nav,
     }
   },
 }
 </script>
+
+<template>
+  <div class="relative h-screen px-4 pb-4 pt-12 md:p-16 flex flex-col">
+    <TitleTeam :state="teamState" @active="setActiveProject" />
+
+    <nav class="flex-grow flex items-center">
+      <ul class="flex flex-col items-stretch space-y-6 md:space-y-0">
+        <TitleService
+          v-for="(service, index) in services"
+          :key="service.name"
+          :state="service.state"
+          :name="service.name"
+          :index="index"
+          @active="setActiveProject"
+        />
+      </ul>
+    </nav>
+
+    <footer>
+      <address
+        class="
+          flex flex-col
+          items-end
+          not-italic
+          text-base
+          font-segoe font-semibold
+        "
+      >
+        <span class="text-gray-500">Nous contacter</span>
+        <a class="text-gray-700" href="mailto:contact@insamee.fr">
+          contact@insamee.fr
+        </a>
+      </address>
+    </footer>
+  </div>
+</template>
+
+

@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <li>
     <TitleLink
       :state="state"
       :name="name"
@@ -38,5 +38,5 @@ export default {
       @active="$emit('active', $event)"
     />
     <component :is="componentName" :state="state" />
-  </div>
+  </li>
 </template>
