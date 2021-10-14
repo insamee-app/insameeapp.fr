@@ -28,20 +28,44 @@ export default {
       },
     })
 
+    const graphic = ref()
+    const graphicMotion = useMotion(graphic, {
+      initial: {
+        opacity: 0,
+        x: 150,
+        transition: {
+          duration: 100,
+          ease: 'easeIn',
+        },
+      },
+      active: {
+        opacity: 1,
+        x: 0,
+        transition: {
+          duration: 500,
+          ease: 'easeOut',
+        },
+      },
+    })
+
     onMounted(() => {
       watch(
         () => props.state,
         (nVal) => {
           if (nVal === 'active') {
+            graphicMotion.variant.value = 'active'
             blobMotion.variant.value = 'active'
           } else {
+            graphicMotion.variant.value = 'initial'
             blobMotion.variant.value = 'initial'
           }
         }
       )
     })
+
     return {
       blob,
+      graphic,
     }
   },
 }
@@ -61,6 +85,9 @@ export default {
       "
     >
       <BlobEvenement ref="blob" />
+    </div>
+    <div class="absolute right-0 top-0 transform translate-y-1/2 translate-x-6">
+      <GraphicEvenement ref="graphic" />
     </div>
   </AnimationSpace>
 </template>

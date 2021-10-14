@@ -126,7 +126,7 @@ export default {
     @pointerleave="mouseLeaveHandler"
   >
     <span ref="icon" class="absolute -left-6 h-20 z-10">
-      <GraphicTutorat class="w-full h-full" />
+      <IconTutorat class="w-full h-full" />
     </span>
     <span
       class="transition-opacity duration-200"

@@ -32,6 +32,7 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
     '~/components/atoms',
+    '~/components/atoms/icons',
     '~/components/atoms/graphics',
     '~/components/atoms/blobs',
     '~/components/molecules',
