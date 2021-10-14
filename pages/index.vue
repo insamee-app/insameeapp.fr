@@ -16,10 +16,11 @@
 
     <section class="flex flex-col items-stretch space-y-6 md:space-y-0">
       <TitleService
-        v-for="service in services"
+        v-for="(service, index) in services"
         :key="service.name"
         :state="service.state"
         :name="service.name"
+        :index="index"
         @active="setActiveProject"
       />
     </section>

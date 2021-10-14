@@ -1,5 +1,7 @@
 <script>
-import { computed } from '@nuxtjs/composition-api'
+import { ref, computed, onMounted, watch } from '@nuxtjs/composition-api'
+import { useMotion } from '@vueuse/motion'
+
 export default {
   name: 'TitleService',
   props: {
@@ -12,6 +14,10 @@ export default {
       required: true,
       validator: (value) =>
         ['active', 'first', 'inactive', 'normal'].includes(value),
+    },
+    index: {
+      type: Number,
+      required: true,
     },
   },
   setup(props, { emit }) {
@@ -46,6 +52,40 @@ export default {
       return props.state === 'first'
     })
 
+    const icon = ref()
+    const iconMotion = useMotion(icon, {
+      initial: {
+        opacity: 0,
+        scale: 0,
+      },
+      first: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+          delay: 100 * props.index,
+        },
+      },
+    })
+    iconMotion.set({
+      transition: {
+        duration: 0.5,
+      },
+    })
+
+    onMounted(() => {
+      watch(
+        () => props.state,
+        (nVal) => {
+          if (nVal === 'first') {
+            iconMotion.variant.value = 'first'
+          } else {
+            iconMotion.variant.value = 'initial'
+          }
+        },
+        { immediate: true }
+      )
+    })
+
     return {
       cutName,
       mouseEnterHandler,
@@ -53,6 +93,7 @@ export default {
       isInactive,
       isActive,
       isFirst,
+      icon,
     }
   },
 }
@@ -75,6 +116,7 @@ export default {
       font-black font-roboto
       transition-all
       duration-500
+      relative
     "
     :style="{
       '-webkit-text-fill-color': isActive ? 'black' : 'white',
@@ -83,7 +125,13 @@ export default {
     @pointerenter="mouseEnterHandler"
     @pointerleave="mouseLeaveHandler"
   >
-    <span>
+    <span ref="icon" class="absolute -left-6 h-20 z-10">
+      <GraphicTutorat class="w-full h-full" />
+    </span>
+    <span
+      class="transition-opacity duration-200"
+      :class="{ 'opacity-0': isFirst }"
+    >
       {{ cutName.firstLetter }}
     </span>
     <span

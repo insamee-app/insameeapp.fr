@@ -30,7 +30,7 @@ export default {
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: ['~/components/molecules'],
+  components: ['~/components/atoms/graphics', '~/components/molecules'],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -45,6 +45,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://motion.vueuse.org/installation.html#nuxt-module
+    'nuxt-use-motion',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
