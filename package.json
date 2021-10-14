@@ -17,12 +17,14 @@
   "dependencies": {
     "@nuxt/content": "^1.14.0",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "nuxt-use-motion": "^2.0.0-beta.5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
+    "@nuxtjs/composition-api": "^0.29.3",
     "@nuxtjs/eslint-config": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^4.2.0",
