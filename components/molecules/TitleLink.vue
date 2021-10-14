@@ -3,7 +3,7 @@ import { ref, computed, onMounted, watch } from '@nuxtjs/composition-api'
 import { useMotion } from '@vueuse/motion'
 
 export default {
-  name: 'TitleService',
+  name: 'TitleLink',
   props: {
     name: {
       type: String,

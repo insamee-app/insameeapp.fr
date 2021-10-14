@@ -1,6 +1,7 @@
 <template>
   <div
     class="
+      relative
       min-h-[calc(100vh-64px)]
       px-4
       pb-4
