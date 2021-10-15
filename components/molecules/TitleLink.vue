@@ -129,7 +129,7 @@ export default {
 
 <template>
   <div
-    class="flex flex-row items-center space-x-4"
+    class="flex flex-row items-center justify-center lg:justify-start space-x-4"
     @pointerenter="mouseEnterHandler"
     @pointerleave="mouseLeaveHandler"
   >
@@ -139,11 +139,12 @@ export default {
         z-10
         relative
         text-4xl
+        sm:text-6xl
         md:text-8xl
         md:py-4
         flex flex-row
         justify-center
-        md:justify-start
+        lg:justify-start
         items-center
         tracking-wide
         uppercase

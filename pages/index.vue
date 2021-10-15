@@ -72,7 +72,19 @@ export default {
 </script>
 
 <template>
-  <div class="relative h-screen px-4 pb-4 pt-20 md:pt-20 md:p-16 flex flex-col">
+  <div
+    class="
+      relative
+      h-screen
+      px-4
+      pb-4
+      pt-20
+      lg:px-16
+      lg:pb-16
+      md:pt-20
+      flex flex-col
+    "
+  >
     <TitleTeam :state="teamState" @active="setActiveProject" />
 
     <nav class="flex-grow flex items-center">
