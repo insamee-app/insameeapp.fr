@@ -19,8 +19,13 @@ export default {}
         text-xl
       "
     >
-      <div>InsameeApp</div>
-      <div class="text-gray-500 font-segoe font-semibold text-lg">À propos</div>
+      <NuxtLink :to="{ name: 'index' }">InsameeApp</NuxtLink>
+      <NuxtLink
+        :to="{ name: 'name', params: { name: 'about' } }"
+        class="text-gray-500 font-segoe font-semibold text-lg"
+      >
+        À propos
+      </NuxtLink>
     </header>
     <Nuxt />
   </div>

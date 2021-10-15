@@ -34,14 +34,16 @@ export default {
 </script>
 
 <template>
-  <li>
-    <TitleLink
-      :state="state"
-      :name="name"
-      :subtitle="subtitle"
-      :index="index"
-      @active="$emit('active', $event)"
-    />
-    <component :is="componentName" :state="state" />
-  </li>
+  <ul>
+    <NuxtLink :to="{ name: 'name', params: { name } }">
+      <TitleLink
+        :state="state"
+        :name="name"
+        :subtitle="subtitle"
+        :index="index"
+        @active="$emit('active', $event)"
+      />
+      <component :is="componentName" :state="state" />
+    </NuxtLink>
+  </ul>
 </template>

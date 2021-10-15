@@ -95,7 +95,7 @@ export default {
     <div
       class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-6"
     >
-      <GraphicEvenement ref="graphic" class="opacity-0" />
+      <GraphicEvenements ref="graphic" class="opacity-0" />
     </div>
   </AnimationSpace>
 </template>

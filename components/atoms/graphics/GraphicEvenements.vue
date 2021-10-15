@@ -17,12 +17,10 @@ export default {
           y: 15,
           x: 0,
           scale: 1,
-          opacity: 0,
         },
         enter: {
           y: 0,
           x: 0,
-          opacity: 1,
           scale: 0.8,
           transition: {
             type: 'spring',

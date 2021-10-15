@@ -6,16 +6,13 @@ export default {
   name: 'GraphicMee',
   setup() {
     const bg = ref()
-
     const { variant } = useMotion(bg, {
       initial: {
-        scale: 1,
         y: 15,
         opacity: 0,
       },
       enter: {
         y: 0,
-        x: 0,
         opacity: 1,
         transition: {
           type: 'spring',
