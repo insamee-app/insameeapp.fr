@@ -66,11 +66,11 @@ export default {
 </script>
 
 <template>
-  <div class="relative h-screen px-4 pb-4 pt-12 md:p-16 flex flex-col">
+  <div class="relative h-screen px-4 pb-4 pt-20 md:pt-20 md:p-16 flex flex-col">
     <TitleTeam :state="teamState" @active="setActiveProject" />
 
     <nav class="flex-grow flex items-center">
-      <ul class="flex flex-col items-stretch space-y-6 md:space-y-0">
+      <ul class="w-full flex flex-col items-stretch space-y-6 md:space-y-0">
         <TitleService
           v-for="(service, index) in services"
           :key="service.name"
