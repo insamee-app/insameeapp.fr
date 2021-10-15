@@ -17,6 +17,7 @@ export default {}
         justify-between
         items-center
         text-xl
+        z-20
       "
     >
       <NuxtLink :to="{ name: 'index' }">InsameeApp</NuxtLink>
