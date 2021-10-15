@@ -6,6 +6,10 @@ export default {
       type: String,
       required: true,
     },
+    subtitle: {
+      type: String,
+      required: true,
+    },
     state: {
       type: String,
       required: true,
@@ -34,6 +38,7 @@ export default {
     <TitleLink
       :state="state"
       :name="name"
+      :subtitle="subtitle"
       :index="index"
       @active="$emit('active', $event)"
     />

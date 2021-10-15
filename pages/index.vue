@@ -8,18 +8,24 @@ export default {
       {
         name: 'tutorat',
         state: 'normal',
+        subtitle:
+          'La plateforme de mise en relation des étudiants et des tuteurs',
       },
       {
         name: 'evenements',
         state: 'normal',
+        subtitle:
+          'La plateforme de mise en relation entre évènements et étudiants',
       },
       {
         name: 'associations',
         state: 'normal',
+        subtitle: 'La plateforme de mise en relation des associations',
       },
       {
         name: 'mee',
         state: 'normal',
+        subtitle: 'La plateforme de mise en relation des profiles étudiants',
       },
     ])
 
@@ -76,6 +82,7 @@ export default {
           :key="service.name"
           :state="service.state"
           :name="service.name"
+          :subtitle="service.subtitle"
           :index="index"
           @active="setActiveProject"
         />
