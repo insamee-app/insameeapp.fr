@@ -3,7 +3,7 @@ import { ref, computed, onMounted, watch } from '@nuxtjs/composition-api'
 import { useMotion } from '@vueuse/motion'
 
 export default {
-  name: 'TitleService',
+  name: 'TitleLink',
   props: {
     name: {
       type: String,
@@ -14,6 +14,10 @@ export default {
       required: true,
       validator: (value) =>
         ['active', 'first', 'inactive', 'normal'].includes(value),
+    },
+    subtitle: {
+      type: String,
+      required: true,
     },
     index: {
       type: Number,
@@ -72,13 +76,36 @@ export default {
       },
     })
 
+    const text = ref()
+    const subtitleMotion = useMotion(text, {
+      initial: {
+        opacity: 0,
+        x: -20,
+        transition: {
+          duration: 150,
+          ease: 'easeIn',
+        },
+      },
+      active: {
+        opacity: 1,
+        x: 0,
+        transition: {
+          duration: 150,
+          ease: 'easeOut',
+        },
+      },
+    })
+
     onMounted(() => {
       watch(
         () => props.state,
         (nVal) => {
           if (nVal === 'first') {
             iconMotion.variant.value = 'first'
+          } else if (nVal === 'active') {
+            subtitleMotion.variant.value = 'active'
           } else {
+            subtitleMotion.variant.value = 'initial'
             iconMotion.variant.value = 'initial'
           }
         },
@@ -94,57 +121,65 @@ export default {
       isActive,
       isFirst,
       icon,
+      text,
     }
   },
 }
 </script>
 
 <template>
-  <h2
-    class="
-      md:py-6
-      flex flex-row
-      justify-center
-      md:justify-start
-      items-center
-      text-4xl
-      tracking-wide
-      md:text-8xl
-      uppercase
-      text-white
-      hover:text-black
-      font-black font-roboto
-      transition-all
-      duration-500
-      relative
-    "
-    :style="{
-      '-webkit-text-fill-color': isActive ? 'black' : 'white',
-    }"
-    :class="{ 'opacity-40': isInactive }"
+  <div
+    class="flex flex-row items-center justify-center lg:justify-start space-x-4"
     @pointerenter="mouseEnterHandler"
     @pointerleave="mouseLeaveHandler"
   >
-    <span ref="icon" class="absolute -left-6 h-20 z-10">
-      <GraphicTutorat class="w-full h-full" />
-    </span>
-    <span
-      class="transition-opacity duration-200"
-      :class="{ 'opacity-0': isFirst }"
+    <div
+      class="
+        title-link
+        z-10
+        relative
+        text-4xl
+        sm:text-6xl
+        md:text-8xl
+        md:py-4
+        flex flex-row
+        justify-center
+        lg:justify-start
+        items-center
+        tracking-wide
+        uppercase
+        text-white
+        font-black font-roboto
+        transition-opacity
+        duration-500
+      "
+      :style="{
+        '-webkit-text-fill-color': isActive ? 'black' : 'white',
+      }"
+      :class="{ 'opacity-40': isInactive }"
     >
-      {{ cutName.firstLetter }}
-    </span>
-    <span
-      class="transition-opacity duration-500"
-      :class="{ 'opacity-40': isFirst }"
-    >
-      {{ cutName.otherLetter }}
-    </span>
-  </h2>
+      <span ref="icon" class="absolute -left-6 h-20 opacity-0 z-10">
+        <IconTutorat class="w-full h-full" />
+      </span>
+      <span
+        class="transition-opacity duration-200"
+        :class="{ 'opacity-0': isFirst }"
+      >
+        {{ cutName.firstLetter }}
+      </span>
+      <span
+        class="transition-opacity duration-500"
+        :class="{ 'opacity-40': isFirst }"
+      >
+        {{ cutName.otherLetter }}
+      </span>
+    </div>
+    <AppSubtitle ref="text" :subtitle="subtitle" class="opacity-0 z-0" />
+  </div>
 </template>
 
 <style scoped>
-h2 {
+.title-link {
   -webkit-text-stroke: 1px black;
 }
 </style>

@@ -1,0 +1,11 @@
+{
+  "commit": {
+    "enabled": true,
+    "message": "chore: [version]"
+  },
+  "changelog": {
+    "enabled": true,
+    "create": true,
+    "open": false
+  }
+}

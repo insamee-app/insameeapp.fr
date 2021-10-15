@@ -10,6 +10,25 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'InsameeApp' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        // content: 'https://insamee.fr/img/social/insamee.jpg',
+      },
+      { hid: 'og:image:alt', property: 'og:image:alt', content: 'InsameeApp' },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@' },
+      {
+        hid: 'twitter:image',
+        property: 'og:image',
+        content: 'https://insamee.fr/img/social/insamee.jpg',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -21,16 +40,28 @@ export default {
           'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700;900&display=swap',
       },
     ],
+
+    bodyAttrs: {
+      class: 'antialiased',
+    },
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: ['~/components/atoms/graphics', '~/components/molecules'],
+  components: [
+    '~/components/atoms',
+    '~/components/atoms/icons',
+    '~/components/atoms/graphics',
+    '~/components/atoms/blobs',
+    '~/components/molecules',
+    '~/components/molecules/animations',
+    '~/components/organisms',
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
