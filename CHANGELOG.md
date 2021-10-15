@@ -1,6 +1,9 @@
+### Version 0.0.2
+- fix(bump): message
+- build: add content
+
 ### Version 0.0.0
 - fix: some issue on header
-
 ### Version 0.0.0
 - chore: initial commit
 - build: add ssr for vercel
