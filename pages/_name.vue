@@ -20,7 +20,7 @@ export default {
   },
   head() {
     return {
-      title: this.platform.title +  " - InsameeApp",
+      title: this.platform.title + ' - InsameeApp',
       meta: [
         {
           hid: 'description',
@@ -54,10 +54,14 @@ export default {
 <template>
   <div class="p-4 lg:p-16">
     <article
-      class="mx-auto prose prose-sm sm:prose lg:prose-lg xl:prose-xl lg:mt-16"
+      class="mx-auto prose prose-sm sm:prose lg:prose-lg xl:prose-xl mt-16"
     >
       <header class="space-y-6 lg:space-y-16">
-        <component :is="bannerName" v-if="platform.graphic" class="mx-auto h-64" />
+        <component
+          :is="bannerName"
+          v-if="platform.graphic"
+          class="mx-auto max-h-64 w-full"
+        />
         <h1>{{ platform.title }}</h1>
       </header>
       <NuxtContent :document="platform" />
