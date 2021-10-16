@@ -1,7 +1,15 @@
+### Version 0.1.0
+- docs: update readme
+- fix(head): update content
+- fix(subtitle): center
+- fix(graphic): animate background
+- fix: typo in subtitle
+- fix(_name): create mobile
+- feat(pwa): add support
+
 ### Version 0.0.2
 - fix(bump): message
 - build: add content
-
 ### Version 0.0.0
 - fix: some issue on header
 ### Version 0.0.0
