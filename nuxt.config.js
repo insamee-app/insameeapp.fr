@@ -50,7 +50,7 @@ export default {
   css: ['~/assets/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/analytics'],
+  plugins: ['~/plugins/analytics.client.js'],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
     '~/components/atoms',
@@ -68,8 +68,22 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://composition-api.nuxtjs.org/
     '@nuxtjs/composition-api/module',
+    // https://pwa.nuxtjs.org/
+    '@nuxtjs/pwa',
   ],
+
+  pwa: {
+    manifest: {
+      name: 'InsameeApp',
+      short_name: 'InsameeApp',
+      description: "L'écosystème de mise en relation étudiante",
+      background_color: '#FFFFFF',
+      theme_color: '#FFFFFF',
+    },
+    icon: true,
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
