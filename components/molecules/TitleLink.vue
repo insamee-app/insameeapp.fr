@@ -174,7 +174,7 @@ export default {
         {{ cutName.otherLetter }}
       </span>
     </div>
-    <AppSubtitle ref="text" :subtitle="subtitle" class="opacity-0 z-0" />
+    <AppSubtitle ref="text" :subtitle="subtitle" class="opacity-0 z-0 mt-3" />
   </div>
 </template>
 
