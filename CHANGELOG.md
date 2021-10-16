@@ -1,3 +1,6 @@
+### Version 0.1.1
+- fix(vercel): add content
+
 ### Version 0.1.0
 - docs: update readme
 - fix(head): update content
@@ -6,7 +9,6 @@
 - fix: typo in subtitle
 - fix(_name): create mobile
 - feat(pwa): add support
-
 ### Version 0.0.2
 - fix(bump): message
 - build: add content
