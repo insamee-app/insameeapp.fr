@@ -25,7 +25,7 @@ export default {
       {
         name: 'mee',
         state: 'normal',
-        subtitle: 'La plateforme de mise en relation des profiles étudiants',
+        subtitle: 'La plateforme de mise en relation des profils étudiants',
       },
     ])
 
