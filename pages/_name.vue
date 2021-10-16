@@ -20,7 +20,7 @@ export default {
   },
   head() {
     return {
-      title: this.platform.title,
+      title: this.platform.title +  " - InsameeApp",
       meta: [
         {
           hid: 'description',

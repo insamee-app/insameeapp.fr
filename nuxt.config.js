@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'insamee.fr',
+    title: 'InsameeApp',
     htmlAttrs: {
       lang: 'fr',
     },
@@ -23,11 +23,11 @@ export default {
         name: 'twitter:card',
         content: 'summary_large_image',
       },
-      { hid: 'twitter:site', name: 'twitter:site', content: '@' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@soubiran25' },
       {
         hid: 'twitter:image',
         property: 'og:image',
-        content: 'https://insamee.fr/img/social/insamee.jpg',
+        // content: 'https://insamee.fr/img/social/insamee.jpg',
       },
     ],
     link: [
