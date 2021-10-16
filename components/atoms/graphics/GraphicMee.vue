@@ -8,11 +8,13 @@ export default {
     const bg = ref()
     const { variant } = useMotion(bg, {
       initial: {
-        y: 15,
+        scale: 0.96,
+        x: 8,
         opacity: 0,
       },
       enter: {
-        y: 0,
+        scale: 1,
+        x: 0,
         opacity: 1,
         transition: {
           type: 'spring',
@@ -24,6 +26,7 @@ export default {
         },
       },
       levitate: {
+        scale: 0.96,
         x: 8,
         transition: {
           duration: 2000,
