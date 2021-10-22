@@ -1,6 +1,6 @@
 ---
 title: Mee
-description: Mee
+description: La plateforme de mise en relation des profils étudiants
 graphic: true
 ---
 

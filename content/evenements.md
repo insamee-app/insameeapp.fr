@@ -1,6 +1,6 @@
 ---
 title: Evènements
-description: Evènements
+description: La plateforme de mise en relation entre évènements et étudiants
 graphic: true
 ---
 
