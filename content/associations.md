@@ -1,6 +1,6 @@
 ---
 title: Associations
-description: Associations
+description: La plateforme de mise en relation des associations
 graphic: true
 ---
 

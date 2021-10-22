@@ -1,22 +1,19 @@
 ---
 title: À propos
-description: À propos
+description: InsameeApp est une organisation. Son objectif est de faciliter l'accès, développer et promouvoir la vie étudiante et associative au sein des écoles et des campus.
 graphic: false
 ---
 
-Design et Développement : [Estéban Soubiran](https://www.linkedin.com/in/esteban25/)
-
-Logos : Jérémy Richard
-
-Contribution : Jordan Béziaud
-
-Illustrations: [unDraw](https://undraw.co/)
+- Design et Développement : [Estéban Soubiran](https://www.linkedin.com/in/esteban25/)
+- Logos : Jérémy Richard
+- Contribution : Jordan Béziaud
+- Illustrations: [unDraw](https://undraw.co/)
 
 ## InsameeApp
 
 InsameeApp est une organisation. Son objectif est de faciliter l'accès, développer et promouvoir la vie étudiante et associative au sein des écoles et des campus.
 
-Pour mener à bien ses objectifs, elle développe et créé des solutions. TEAM est l'une de ses solutions.
+Pour mener à bien ses objectifs, elle développe et crée des solutions. TEAM est l'une de ses solutions.
 
 ### TEAM
 
@@ -29,7 +26,7 @@ TEAM est le nom donné à l'écosystème de mise en relation. L'écosystème est
 - Associations
 - Mee
 
-Ainsi, Insamee est une déclinaison de TEAM pour le groupe INSA. Si vous faites partis d'une école ou d'un groupe qui pourrait être intéressée par la solution, n'hésitez pas à nous contacter, [contact@insamee.fr](mailto:contact@insamee.fr).
+Ainsi, Insamee est une déclinaison de TEAM pour le groupe INSA. Si vous faites partis d'une école ou d'un groupe qui pourrait être intéressé par la solution, n'hésitez pas à nous contacter, [contact@insamee.fr](mailto:contact@insamee.fr).
 
 ## Qui sommes-nous
 
