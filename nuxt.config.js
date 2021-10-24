@@ -73,6 +73,8 @@ export default {
     '@nuxtjs/composition-api/module',
     // https://pwa.nuxtjs.org/
     '@nuxtjs/pwa',
+    // https://image.nuxtjs.org/getting-started/installation
+    '@nuxt/image',
   ],
 
   pwa: {

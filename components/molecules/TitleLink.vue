@@ -140,8 +140,7 @@ export default {
         relative
         text-4xl
         sm:text-6xl
-        md:text-8xl
-        md:py-4
+        md:text-8xl md:py-4
         flex flex-row
         justify-center
         lg:justify-start
@@ -159,7 +158,7 @@ export default {
       :class="{ 'opacity-40': isInactive }"
     >
       <span ref="icon" class="absolute -left-6 h-20 opacity-0 z-10">
-        <IconTutorat class="w-full h-full" />
+        <NuxtImg class="w-full h-full" :src="`/logos/${name}.png`" />
       </span>
       <span
         class="transition-opacity duration-200"

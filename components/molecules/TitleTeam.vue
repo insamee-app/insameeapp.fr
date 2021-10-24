@@ -11,13 +11,13 @@ export default {
   },
   setup(props, { emit }) {
     function mouseEnterHandler(e) {
-      // if (e.pointerType === 'touch') return
-      // emit('active', 'team')
+      if (e.pointerType === 'touch') return
+      emit('active', 'team')
     }
 
     function mouseLeaveHandler(e) {
-      // if (e.pointerType === 'touch') return
-      // emit('active', false)
+      if (e.pointerType === 'touch') return
+      emit('active', false)
     }
 
     const isInactive = computed(() => {
