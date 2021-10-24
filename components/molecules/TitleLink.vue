@@ -162,7 +162,6 @@ export default {
           class="w-full h-full"
           :src="`/logos/${name}.png`"
           :alt="`logo de la plateforme '${name}'`"
-          width="80"
           height="80"
         />
       </span>
