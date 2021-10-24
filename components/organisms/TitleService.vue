@@ -34,7 +34,7 @@ export default {
 </script>
 
 <template>
-  <ul>
+  <li>
     <NuxtLink :to="{ name: 'name', params: { name } }">
       <TitleLink
         :state="state"
@@ -45,5 +45,5 @@ export default {
       />
       <component :is="componentName" :state="state" />
     </NuxtLink>
-  </ul>
+  </li>
 </template>
