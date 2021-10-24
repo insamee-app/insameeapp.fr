@@ -72,15 +72,14 @@ export default {
 </script>
 
 <template>
-  <div
+  <main
     class="
       relative
       h-screen
       px-4
       pb-4
       pt-20
-      lg:px-16
-      lg:pb-16
+      lg:px-16 lg:pb-16
       md:pt-20
       flex flex-col
     "
@@ -101,23 +100,21 @@ export default {
       </ul>
     </nav>
 
-    <footer>
-      <address
-        class="
-          flex flex-col
-          items-end
-          not-italic
-          text-base
-          font-segoe font-semibold
-        "
-      >
-        <span class="text-gray-500">Nous contacter</span>
-        <a class="text-gray-700" href="mailto:contact@insamee.fr">
-          contact@insamee.fr
-        </a>
-      </address>
-    </footer>
-  </div>
+    <address
+      class="
+        flex flex-col
+        items-end
+        not-italic
+        text-base
+        font-segoe font-semibold
+      "
+    >
+      <span class="text-gray-500">Nous contacter</span>
+      <a class="text-gray-700" href="mailto:contact@insamee.fr">
+        contact@insamee.fr
+      </a>
+    </address>
+  </main>
 </template>
 
 

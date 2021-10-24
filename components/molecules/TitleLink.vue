@@ -158,7 +158,12 @@ export default {
       :class="{ 'opacity-40': isInactive }"
     >
       <span ref="icon" class="absolute -left-6 h-20 opacity-0 z-10">
-        <NuxtImg class="w-full h-full" :src="`/logos/${name}.png`" />
+        <NuxtImg
+          class="w-full h-full"
+          :src="`/logos/${name}.png`"
+          :alt="`logo de la plateforme '${name}'`"
+          height="80"
+        />
       </span>
       <span
         class="transition-opacity duration-200"

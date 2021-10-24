@@ -52,7 +52,7 @@ export default {
 </script>
 
 <template>
-  <div class="p-4 lg:p-16">
+  <main class="p-4 lg:p-16">
     <article
       class="mx-auto prose prose-sm sm:prose lg:prose-lg xl:prose-xl mt-16"
     >
@@ -66,5 +66,5 @@ export default {
       </header>
       <NuxtContent :document="platform" />
     </article>
-  </div>
+  </main>
 </template>
