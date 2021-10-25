@@ -23,7 +23,7 @@ Si le projet t'intéresse et que tu souhaites en savoir plus ou rejoindre l'équ
 
 TEAM est un écosystème. Son objectif est de permettre et de favoriser la communication, la rencontre et l'échange intra et inter-école.
 
-Cet écosystème est composé de de 4 plateformes :
+Cet écosystème est composé de 4 plateformes :
 
 - Tutorat
 - Evènements
