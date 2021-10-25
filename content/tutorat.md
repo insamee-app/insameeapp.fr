@@ -10,7 +10,7 @@ graphic: true
 
 **Tutorat** est une plateforme web de l'écosystème **TEAM**. Associé à **Mee**, elle te permet de trouver les tutorats qui vont t'aider dans tes études !
 
-Avec **Tutorat**, tu vas pouvoir trouver des tuteurs pour t'aider à **progresser dans tes études**. Aussi, il te sera aussi possible d'indiquer tes besoins afin qu'un tuteur puisse y répondre pour t'aider. Tu pourras aussi **marquer ton intérêt** pour les différentes séances ou sur les demandes des autres utilisateurs. Réaliser un tutorat, c'est **aider un élève à progresser**, lui faire plaisir mais c'est aussi **progresser soi-même**, améliorer son aisance à l'oral et son éloquence. En proposant ton aide sur la plateforme, c'est tout gagnant pour tout le monde !
+Avec **Tutorat**, tu vas pouvoir trouver des tuteurs pour t'aider à **progresser dans tes études**. Il te sera possible d'indiquer tes besoins afin qu'un tuteur puisse y répondre pour t'aider. Tu pourras **marquer ton intérêt** pour les différentes séances ou sur les demandes des autres utilisateurs. Réaliser un tutorat, c'est **aider un élève à progresser**, lui faire plaisir mais c'est aussi **progresser soi-même**, améliorer son aisance à l'oral et son éloquence ainsi que son habileté à vulgariser des propos et développer sa communication technologique. En proposant ton aide sur la plateforme, c'est gagnant pour tout le monde !
 
 ## Les fonctionnalités
 
@@ -20,4 +20,4 @@ Lorsque tu créeras une offre et que des personnes y marqueront leurs intérêts
 
 Lorsque tu crées une demande ou que tu marques ton intérêt pour une demande alors tu seras prévenu par mail lorsqu'une offre correspondante est créée.
 
-Et enfin, tu seras en mesure d'indiquer ton intérêt pour les différentes offres et demandes présente sur la plateforme.
+Et enfin, tu seras en mesure d'indiquer ton intérêt pour les différentes offres et demandes présentes sur la plateforme.
