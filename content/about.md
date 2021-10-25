@@ -32,4 +32,4 @@ Cet écosystème est composé de de 4 plateformes :
 
 Ainsi, Insamee est une déclinaison de TEAM pour le groupe INSA.
 
-Si vous faites partis d'une école ou d'un groupe qui pourrait être intéressé par ce type de solution, n'hésitez pas à nous contacter via l'adresse : [contact@insamee.fr](https://www.notion.so/contact-insamee-fr-8563f8ce18b24bc0b36a6e1eca1d5b4d).
+Si vous faites partis d'une école ou d'un groupe qui pourrait être intéressé par ce type de solution, n'hésitez pas à nous contacter via l'adresse : [contact@insamee.fr](mailto:contact@insamee.fr).
