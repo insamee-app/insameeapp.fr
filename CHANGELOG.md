@@ -1,6 +1,19 @@
+### Version 1.0.1
+- feat(sitemap): create one
+
+### Version 1.0.0
+- chore: temp remove team hover
+- feat(content): add texts
+- feat(content): add description
+- feat(logos): add team logos
+- fix(dom): update dom tags
+- fix(images): update size
+- fix(content): update texts
+- fix(content): typo
+- fix(content): typo
+
 ### Version 0.1.1
 - fix(vercel): add content
-
 ### Version 0.1.0
 - docs: update readme
 - fix(head): update content
