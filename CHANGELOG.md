@@ -1,3 +1,6 @@
+### Version 1.0.1
+- feat(sitemap): create one
+
 ### Version 1.0.0
 - chore: temp remove team hover
 - feat(content): add texts
