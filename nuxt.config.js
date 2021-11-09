@@ -106,6 +106,10 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  publicRuntimeConfig: {
+    newsUrl: process.env.NEWS_URL,
+  },
+
   sitemap: {
     hostname: process.env.BASE_URL,
     trailingSlash: true,

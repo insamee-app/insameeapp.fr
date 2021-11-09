@@ -21,12 +21,12 @@ export default {}
       "
     >
       <NuxtLink :to="{ name: 'index' }">InsameeApp</NuxtLink>
-      <NuxtLink
-        :to="{ name: 'name', params: { name: 'about' } }"
-        class="text-gray-500 font-segoe font-semibold text-lg"
-      >
-        À propos
-      </NuxtLink>
+      <div class="text-gray-500 font-segoe font-semibold text-lg space-x-4">
+        <a :href="$config.newsUrl" target="_blank">Actualités</a>
+        <NuxtLink :to="{ name: 'name', params: { name: 'about' } }">
+          À propos
+        </NuxtLink>
+      </div>
     </header>
     <Nuxt />
   </div>
