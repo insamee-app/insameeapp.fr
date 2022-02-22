@@ -54,7 +54,7 @@ export default {
 <template>
   <main class="p-4 lg:p-16">
     <article
-      class="mx-auto prose prose-sm sm:prose lg:prose-lg xl:prose-xl mt-16"
+      class="mx-auto prose lg:prose-lg xl:prose-xl mt-16"
     >
       <header class="space-y-6 lg:space-y-16">
         <component
