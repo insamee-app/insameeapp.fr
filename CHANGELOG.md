@@ -1,3 +1,14 @@
+### Version 1.1.0
+- fix(sitemap): trailing slash
+- fix(content): update about
+- feat(news): add link
+- fix(icons): update to new icons
+- fix(analytics): update clarity
+- feat(graphics): update new colors
+- fix(blob): update color
+- fix: remove sm in prose
+- fix: update about
+
 ### Version 1.0.1
 - feat(sitemap): create one
 

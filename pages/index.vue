@@ -110,8 +110,8 @@ export default {
       "
     >
       <span class="text-gray-500">Nous contacter</span>
-      <a class="text-gray-700" href="mailto:contact@insamee.fr">
-        contact@insamee.fr
+      <a class="text-gray-700" href="mailto:contact@insameeapp.fr">
+        contact@insameeapp.fr
       </a>
     </address>
   </main>
